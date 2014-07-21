@@ -1,3 +1,33 @@
 {
-  "connection_string": "postgres://voicemail:password@localhost/voicemail"
+  "connectionString": "postgres://user:password@localhost/voicemail",
+  "folders": [{
+    "name": "INBOX",
+    "recording": "sound:vm-INBOX",
+    "_dtmf": 0
+  }, {
+    "name": "Old",
+    "recording": "sound:vm-Old",
+    "_dtmf": 1
+  }, {
+    "name": "Work",
+    "recording": "sound:vm-Work",
+    "_dtmf": 2
+  }, {
+    "name": "Family",
+    "recording": "sound:vm-Family",
+    "_dtmf": 3
+  }, {
+    "name": "Friends",
+    "recording": "sound:vm-Friends",
+    "_dtmf": 4
+  }],
+  "options": {
+    "minsec": 4,
+    "skipms": 3000
+  },
+  "ariConnection": {
+    "url": "http://localhost:8088",
+    "user": "user",
+    "pass": "secret"
+  }
 }
