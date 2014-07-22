@@ -34,7 +34,7 @@ postgres://user:password@localhost/voicemail
 Run the following to create all tables, indexes, and a mailbox and context for testing purposes:
 
 ```bash
-node createdata.js
+$node createdata.js
 ```
 
 ## Asterisk configuration
@@ -57,7 +57,7 @@ exten => 9999,1,NoOp()
 Start the application:
 
 ```bash
-node app.js
+$node app.js
 ```
 
 ## Leave a message
