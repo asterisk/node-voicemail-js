@@ -22,8 +22,8 @@
     "_dtmf": 4
   }],
   "options": {
-    "minsec": 4,
-    "skipms": 3000
+    "maxduration": 600,
+    "maxsilence": 5
   },
   "ariConnection": {
     "url": "http://localhost:8088",

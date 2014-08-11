@@ -30,6 +30,35 @@ function Messages() {
 }
 
 /**
+ * Returns true if the list of messages has at least 1 previously played
+ * message in it.
+ */
+Messages.prototype.previousExists = function() {
+  return !!this.previousMessages.length;
+};
+
+/**
+ * Returnsn true if the list of messages has a current message in it.
+ */
+Messages.prototype.currentExists = function() {
+  return !!this.currentMessage;
+};
+
+/**
+ * Returns true if the list of messages is empty.
+ */
+Messages.prototype.isEmpty = function() {
+  return !!this.messages.length;
+};
+
+/**
+ * Returns true if the list of messages is not empty.
+ */
+Messages.prototype.isNotEmpty = function() {
+  return !this.isEmpty();
+};
+
+/**
  * Returns the next unread message to be or if all messages have been played,
  * the next latest read message.
  */
@@ -95,11 +124,13 @@ Messages.prototype.first = function() {
 };
 
 /**
- * Returns the message associated with the given recording.
+ * Returns the message associated with the given playback.
  *
- * @param {string} recording - the message recording name
+ * @param {Playback} playback - a playback instance
  */
-Messages.prototype.getMessage = function(recording) {
+Messages.prototype.getMessage = function(playback) {
+  var recording = playback['media_uri'].slice(10);
+
   return this.messages.filter(function(message) {
     return message.recording === recording;
   })[0];

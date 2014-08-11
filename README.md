@@ -67,7 +67,9 @@ Dial 8888
 ### Menu
 
 - Press 1 to record a message
-- Press 2 to confirm that message
+- Press # to end the current message
+- Press 2 to confirm the current message
+- Press 7 to cancel the current message
 
 ## Listen to messages
 
@@ -80,8 +82,8 @@ Dial 9999
 - Press 5 to repeat the message
 - Press 1 to play the first message
 - Press 7 to delete the message
-- Press 2 followed by the folder id to change folders
-- Press 9 followed by the folder id to save the message to that folder
+- Press 2 followed by the folder id and # to change folders
+- Press 9 followed by the folder id and # to save the message to that folder
 
 ### Folders
 
