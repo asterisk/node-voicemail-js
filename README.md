@@ -1,6 +1,6 @@
 # Deprecation notice
 
-All work on this prototype has ceased. Discussion on the prototype and how we will be moving forward can be found at http://lists.digium.com/pipermail/asterisk-app-dev/2014-July/000514.html
+All work on this prototype has ceased. Discussion on the prototype and how we will be moving forward can be found at http://lists.digium.com/pipermail/asterisk-app-dev/2014-July/000514.html and http://lists.digium.com/pipermail/asterisk-app-dev/2014-September/000535.html
 
 # About
 
