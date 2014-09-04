@@ -1,3 +1,7 @@
+# Deprecation notice
+
+All work on this prototype has ceased. Discussion on the prototype and how we will be moving forward can be found at http://lists.digium.com/pipermail/asterisk-app-dev/2014-July/000514.html
+
 # About
 
 This application is a prototype for a Voicemail and Voicemail Main replacement using ARI and Node.js.

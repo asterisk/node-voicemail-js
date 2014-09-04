@@ -2,6 +2,7 @@
   "name": "asterisk-voicemail",
   "version": "0.0.1",
   "description": "ARI implementation of Voicemail.",
+  "private": true,
   "main": "app.js",
   "scripts": {
     "test": "mocha reporter --spec"
